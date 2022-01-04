@@ -1,0 +1,630 @@
+html {}
+
+html,
+body {
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    transition: background-color .5s;
+    font-size: 16px;
+    line-height: 1.3em;
+    padding: 5px;
+}
+
+
+/* Webfont noto-sans-regular - latin */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/noto-sans-v7-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Noto Sans'), local('NotoSans'),
+        url('../fonts/noto-sans-v7-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/noto-sans-v7-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/noto-sans-v7-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/noto-sans-v7-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/noto-sans-v7-latin-regular.svg#NotoSans') format('svg');
+    /* Legacy iOS */
+}
+
+
+/****** green header-bar for headlines ******/
+.header_olive {
+    display: block;
+    height: 6em;
+    background-color: #959072;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+h1 {
+    font-family: 'Verdana', 'Noto Sans', sans-serif;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    position: absolute;
+    width: calc(100% - 1em);
+    text-align: center;
+    bottom: -3.3px;
+    line-height: 1;
+    margin: 0;
+
+}
+
+
+h2 {
+    color: #3e5c6b;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    color: #3e5c6b;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h4 {
+    color: #3e5c6b;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h5 {
+    color: #3e5c6b;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #3e5c6b;
+    margin-bottom: -0.5vw;
+
+}
+
+h6 {
+    color: #3e5c6b;
+    font-style: italic;
+    text-align: left;
+}
+
+.FontIcon {
+    position: fixed;
+    top: 4em;
+    right: 5px;
+    max-height: 5% !important;
+
+}
+
+#decrease {
+    display: none;
+}
+
+#increase {
+    display: initial;
+}
+
+/************************* GENERAL SETTINGS ******************************/
+
+.page {
+    min-height: 100%;
+    text-align: center;
+    width: 100%;
+
+}
+
+figure {
+    color: #3e5c6b;
+}
+
+a {
+    color: #fff;
+}
+
+a.active {
+    color: #959072;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.grid {
+    color: #3e5c6b;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 5em 0 5em 0;
+    column-gap: 1em;
+
+}
+
+.grid.zwei {
+    grid-template-columns: calc(50% - .5em) calc(50% - .5em);
+}
+
+#text_ueberuns {
+    padding: 1em;
+}
+
+.gallery {
+    width: auto;
+    padding: 5em 0 5em 0;
+
+}
+
+.gallery img {
+    cursor: pointer;
+    width: calc(50% - 1em);
+}
+
+
+
+/*********************************/
+
+/***************** SECTIONS ************/
+#main {
+    transition: margin-right: .5s;
+    height: 100%;
+}
+
+/*************** START ****************/
+#startpage {
+    height: calc(100vh - 6em);
+    /*width: auto;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#startpage img {
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/****************** UEBERUNS *********/
+#ueberuns {
+    background-color: #3e5c6b;
+    position: relative;
+
+}
+
+.dark {
+    padding-top: 10%;
+    color: white;
+    text-align: left;
+
+}
+
+#img_ueberuns {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+
+}
+
+
+/************** DIENSTLEISTUNGEN ***********/
+
+#dienstleistungen img {
+    width: 100px;
+}
+
+#planung,
+#beratung,
+#projektleitung {
+    padding-bottom: 2em;
+}
+
+/************ SCHWERPUNKTE **********/
+
+#schwerpunkte img {
+    max-width: 300px;
+}
+
+#innenarchitektur,
+#architektur {
+    padding-bottom: 2em;
+}
+
+/*************** PROJEKTE ***********/
+
+
+
+/************ TEAM ******************/
+
+
+#hallstein,
+#risse {
+    padding-bottom: 2em;
+}
+
+/************* KONTAKT **************/
+
+#content_kontakt {
+    padding-top: 5em;
+    padding-left: 5em;
+    text-align: left;
+}
+
+#img_kontakt {
+    max-width: 60%;
+    padding-top: 3em;
+}
+
+
+#kontakt a {
+    color: #3e5c6b;
+    text-decoration: underline;
+}
+
+#kontakt #faname {
+    width: 20em;
+}
+
+/************** Footer **************/
+footer {
+    display: block;
+    height: 4em;
+    padding: 10px;
+    background-color: #959072;
+    /*width: 95vw;*/
+}
+
+footer a {
+    text-decoration: none;
+
+    font-size: 0.8em;
+
+}
+
+footer p {
+    text-align: right;
+
+}
+
+
+/***********IMPRESSUM*****************/
+
+
+#impressum {
+    font-size: 16px;
+    color: #3e5c6b;
+    text-align: left;
+}
+
+#impressum article {
+    padding: 4em 10em 2em 2em;
+}
+
+#impressum a {
+    color: #959072;
+}
+
+#impressum ul {
+    list-style-type: circle;
+}
+
+#impressum img {
+    width: 20em;
+}
+
+
+/************ DSE *******************/
+#dse {
+    color: #3e5c6b;
+    text-align: left;
+    font-size: 16px;
+}
+
+#dse article {
+    padding: 4em 10em 2em 2em;
+}
+
+#dse a {
+    color: #959072;
+}
+
+/*********** Lightbox ***********/
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: rgba(62, 92, 107, .75);
+}
+
+#lightboxContent {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 5em;
+
+}
+
+#lightboxImage {
+    max-height: 90vh;
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+#lightboxExitBtn {
+    position: absolute;
+    display: block;
+    right: 1em;
+    top: 1em;
+    color: #fff;
+    z-index: 999;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#placeholder {
+    display: none;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    z-index: 99;
+    
+}
+
+/*****************************/
+
+/******* Side Navigation *****/
+#navbar {
+    font-size: 1.3em;
+    color: #fff;
+    background-color: #959072;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    padding: 10px 10px 0 0;
+
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #3e5c6b;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6em;
+    padding-bottom: 1em;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #959072;
+}
+
+.sidenav a.active {
+    color: #959072;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 2em;
+    margin-left: 50px;
+}
+
+#mySidenav_bottom {
+    font-size: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+/***************************************/
+
+
+
+/************** @media **************/
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    h1 {
+        font-family: 'Verdana', 'Noto Sans', sans-serif;
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+        bottom: -3.3px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .page {
+        min-height: auto;
+    }
+
+
+
+    .grid.zwei {
+        grid-template-columns: 100%;
+
+    }
+
+    .grid {
+        padding-bottom: 0;
+    }
+
+    #content_kontakt {
+        width: auto;
+       padding: 0 2em 0 2em;
+        text-align: left;
+    }
+    
+    #img_kontakt {
+    width: auto;
+    padding-top: 3em;
+    }
+
+
+    #kontakt img {
+        max-width: 100%;
+        width: auto;
+        padding-top: 2em;
+    }
+
+    #ueberuns .grid {
+        padding: 0;
+    }
+
+    #dse article {
+        padding: 4em 0em 0em 2em;
+    }
+
+    #impressum article {
+        padding: 4em 0em 0em 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #img_ueberuns {
+        position: relative;
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 0;
+        margin-bottom: -5px;
+        max-width: 300px;
+
+
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    #ueberuns .grid.zwei {
+        grid-template-columns: 100%;
+        padding-bottom: 0;
+        text-align: right;
+    }
+
+}
+
+@media print {
+
+    footer,
+    #navbar,
+    .FontIcon {
+        display: none;
+    }
+
+    .header_olive {
+        display: flex;
+        height: 2em;
+
+    }
+
+    #startpage {
+        height: calc(80vh - 2em);
+
+    }
+
+    #startpage img {
+        height: auto;
+        width: auto;
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .main {
+        height: 70%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .grid {
+        padding: 2em;
+    }
+
+    * {
+        background-color: #fff;
+        color: #000;
+    }
+
+    #img_ueberuns {
+        width: 30%;
+        bottom: 1em;
+        right: 1em;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure {
+        color: #000;
+    }
+
+    h1 {
+        color: #000;
+        font-size: 1.5em;
+        bottom: 0;
+    }
+
+    /*      a:after {
+            content: "( "attr(href)" )"; */
+
+
+    #hallstein,
+    #risse {
+        padding-bottom: 0;
+        width: 80%;
+    }
